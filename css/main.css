@@ -114,6 +114,8 @@ body {
   line-height: 48px;
   letter-spacing: -1px;
   color: #FFFFFF; }
+  .chistik-advantages li {
+    line-height: 48px; }
 
 .copyright {
   position: absolute;
@@ -128,13 +130,6 @@ body {
   text-align: center;
   letter-spacing: -0.065em;
   color: #FFFFFF; }
-
-.chistik-animate {
-  height: 640px;
-  width: 393px;
-  position: absolute;
-  top: 50px;
-  right: 16%; }
 
 .drink {
   position: absolute;
@@ -152,3 +147,10 @@ body {
        text-align-last: justify;
   right: -116px;
   top: 63%; }
+
+.chistik-animate {
+  height: auto;
+  width: 33vw;
+  position: absolute;
+  top: 50px;
+  right: 16%; }
