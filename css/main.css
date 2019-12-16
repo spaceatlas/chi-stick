@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif; } }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+b {
+  font-weight: 500; }
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #000;
+  position: relative;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    body {
+      overflow: auto;
+      height: auto; } }
+
+.main-wrapper {
+  padding: 0 30px 30px 30px; }
+  @media (max-width: 768px) {
+    .main-wrapper {
+      padding: 0 15px 15px 15px; } }
+
+#marquee {
+  padding-top: 30px;
+  font-family: 'Inter var', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.4; }
+  @media (max-width: 768px) {
+    #marquee {
+      padding-top: 10px; } }
+
+@media (max-width: 768px) {
+  .br {
+    display: none; } }
+
+.chistik {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12.4vw;
+  line-height: 14.4vw;
+  letter-spacing: -.8vw;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  @media (max-width: 768px) {
+    .chistik {
+      font-size: 80px;
+      line-height: 95px;
+      letter-spacing: -3px;
+      text-align: left; } }
+  .chistik:after {
+    content: '₽ · € · $ · ₪ · ¥';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: #FFFFFF; }
+    @media (max-width: 768px) {
+      .chistik:after {
+        display: none; } }
+
+.sub-chistik {
+  margin-top: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1.4px;
+  color: #FFFFFF; }
+  @media (max-width: 768px) {
+    .sub-chistik {
+      font-size: 19px; } }
+
+.chistik-advantages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #FFFFFF; }
+
+.copyright {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 149px;
+  height: 53px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: -0.065em;
+  color: #FFFFFF; }
+
+.chistik-animate {
+  height: 640px;
+  width: 393px;
+  position: absolute;
+  top: 50px;
+  right: 16%; }
+
+.drink {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 300px;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+  right: -116px;
+  top: 63%; }

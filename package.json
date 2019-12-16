@@ -1,0 +1,25 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "123",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "build-scss": "gulp build:scss",
+    "watch": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-sass": "latest",
+    "npm": "^6.13.1"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp-hb": "latest",
+    "gulp-rename": "latest"
+  }
+}
