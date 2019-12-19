@@ -21,7 +21,7 @@ b {
 
 body {
   height: 100vh;
-  min-height: 100vh;
+  min-height: 750px;
   width: 100vw;
   margin: 0;
   background-color: #000;
@@ -30,13 +30,14 @@ body {
   @media (max-width: 768px) {
     body {
       overflow: auto;
-      height: auto; } }
+      height: auto;
+      width: auto; } }
 
 .main-wrapper {
   padding: 0 30px 30px 30px; }
   @media (max-width: 768px) {
     .main-wrapper {
-      padding: 0 15px 15px 15px; } }
+      padding: 0 15px 72px 15px; } }
 
 #marquee {
   padding-top: 30px;
@@ -53,8 +54,14 @@ body {
       padding-top: 10px; } }
 
 @media (max-width: 768px) {
-  .br {
+  .br1 {
     display: none; } }
+
+.br2 {
+  display: none; }
+  @media (max-width: 768px) {
+    .br2 {
+      display: block; } }
 
 .chistik {
   font-style: normal;
@@ -71,7 +78,8 @@ body {
       font-size: 80px;
       line-height: 95px;
       letter-spacing: -3px;
-      text-align: left; } }
+      text-align: left;
+      padding: 0 15px; } }
   .chistik:after {
     content: '₽ · € · $ · ₪ · ¥';
     display: block;
@@ -99,7 +107,11 @@ body {
   color: #FFFFFF; }
   @media (max-width: 768px) {
     .sub-chistik {
-      font-size: 19px; } }
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: -25px;
+      position: relative;
+      z-index: 1111; } }
 
 .chistik-advantages {
   list-style: none;
@@ -114,8 +126,18 @@ body {
   line-height: 48px;
   letter-spacing: -1px;
   color: #FFFFFF; }
+  @media (max-width: 768px) {
+    .chistik-advantages {
+      position: static;
+      font-size: 32px;
+      line-height: 44px;
+      padding-top: 28px;
+      margin-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3); } }
   .chistik-advantages li {
-    line-height: 48px; }
+    line-height: 48px;
+    padding: 0;
+    margin: 0; }
 
 .copyright {
   position: absolute;
@@ -130,6 +152,14 @@ body {
   text-align: center;
   letter-spacing: -0.065em;
   color: #FFFFFF; }
+  @media (max-width: 768px) {
+    .copyright {
+      font-size: 36px;
+      line-height: 44px;
+      width: 122px;
+      height: 44px;
+      bottom: 15px;
+      right: 15px; } }
 
 .drink {
   position: absolute;
@@ -147,6 +177,13 @@ body {
        text-align-last: justify;
   right: -116px;
   top: 63%; }
+  @media (max-width: 768px) {
+    .drink {
+      position: static;
+      -webkit-transform: none;
+              transform: none;
+      margin-top: 48px;
+      width: 100%; } }
 
 .chistik-animate {
   height: 86vh;
@@ -154,3 +191,8 @@ body {
   position: absolute;
   top: 50px;
   right: 16%; }
+  @media (max-width: 768px) {
+    .chistik-animate {
+      position: static;
+      margin: -40px auto 0 auto;
+      display: block; } }

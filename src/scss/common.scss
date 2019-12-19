@@ -20,7 +20,7 @@ b {
 
 body {
     height: 100vh;
-    min-height: 100vh;
+    min-height: 750px;
     width: 100vw;
     margin: 0;
     background-color: #000;
@@ -30,6 +30,7 @@ body {
     @media (max-width: 768px) {
         overflow: auto;
         height: auto;
+        width: auto;
     }
 }
 
@@ -37,7 +38,7 @@ body {
     padding: 0 30px 30px 30px;
 
     @media (max-width: 768px) {
-        padding: 0 15px 15px 15px;
+        padding: 0 15px 72px 15px;
     }
 }
 
@@ -57,10 +58,17 @@ body {
     }
 }
 
-.br {
-
+.br1 {
     @media (max-width: 768px) {
         display: none;
+    }
+}
+
+.br2 {
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
     }
 }
 
@@ -80,6 +88,7 @@ body {
         line-height: 95px;
         letter-spacing: -3px;
         text-align: left;
+        padding: 0 15px;
     }
 
     &:after {
@@ -112,7 +121,11 @@ body {
     color: #FFFFFF;
 
     @media (max-width: 768px) {
-        font-size: 19px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: -25px;
+        position: relative;
+        z-index: 1111;
     }
 }
 
@@ -130,8 +143,19 @@ body {
     letter-spacing: -1px;
     color: #FFFFFF;
 
+    @media (max-width: 768px) {
+        position: static;
+        font-size: 32px;
+        line-height: 44px;
+        padding-top: 28px;
+        margin-top: 28px;
+        border-top: 1px solid rgba(255, 255, 255, .3);
+    }
+
     li {
         line-height: 48px;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -148,6 +172,15 @@ body {
     text-align: center;
     letter-spacing: -0.065em;
     color: #FFFFFF;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 44px;
+        width: 122px;
+        height: 44px;
+        bottom: 15px;
+        right: 15px;
+    }
 }
 
 .drink {
@@ -164,6 +197,13 @@ body {
     text-align-last: justify;
     right: -116px;
     top: 63%;
+
+    @media (max-width: 768px) {
+        position: static;
+        transform: none;
+        margin-top: 48px;
+        width: 100%;
+    }
 }
 
 .chistik-animate {
@@ -172,4 +212,10 @@ body {
     position: absolute;
     top: 50px;
     right: 16%;
+
+    @media (max-width: 768px) {
+        position: static;
+        margin: -40px auto 0 auto;
+        display: block;
+    }
 }
