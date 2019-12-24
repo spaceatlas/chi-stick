@@ -84,8 +84,8 @@ body {
     position: relative;
 
     @media (max-width: 768px) {
-        font-size: 80px;
-        line-height: 95px;
+        font-size: 76px;
+        line-height: 76px;
         letter-spacing: -3px;
         text-align: left;
         padding: 0 15px;
@@ -105,7 +105,12 @@ body {
         color: #FFFFFF;
 
         @media (max-width: 768px) {
-            display: none;
+            font-size: 20px;
+            line-height: 17px;
+            top: 100px;
+            right: 10px;
+            width: 16px;
+            text-align: center;
         }
     }
 }
@@ -156,6 +161,10 @@ body {
         line-height: 48px;
         padding: 0;
         margin: 0;
+
+        @media (max-width: 768px) {
+            line-height: 44px;
+        }
     }
 }
 
